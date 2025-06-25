@@ -1,0 +1,112 @@
+
+
+form {
+  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 20px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px; /* optional, adds some horizontal padding */
+  box-sizing: border-box; /* ensures padding is included in width */
+   padding: 30px;
+  border-radius: 8px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #333333;
+  font-weight: 500;
+}
+
+/* Text Inputs, Selects, and Textareas */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52,152,219,0.2);
+  outline: none;
+}
+
+/* Multi-select (Select2 or native) */
+form select[multiple] {
+  height: auto;
+  min-height: 120px;
+}
+
+/* Submit Button */
+form button,
+form input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+/* Optional: Add some spacing between form sections */
+form hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Optional: Improve label alignment for dynamic fields */
+#otherEducationDiv,
+#companyNameDiv,
+#friendNameDiv {
+  margin-top: 10px;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap; /* allows items to wrap to next line on smaller screens */
+  gap: 20px; /* spacing between fields */
+  margin-bottom: 20px; /* spacing between rows */
+}
+
+.form-group {
+  flex: 1; /* each group takes equal width by default */
+  min-width: 200px; /* minimum width of each field */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
